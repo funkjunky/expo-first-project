@@ -1,0 +1,25 @@
+TODO
+—
+
+*- Permissions, get access to notifications and camera! See guide on permissions.
+*- get access to the camera
+
+*- Add a fourth screen and a button that navigates to it
+*- get location from user and display it, with some map view
+	*- native map
+
+*- try SQL access.
+
+- OpenGL!
+	- three.js rotating cube based on gyro or whatever
+		- new screen and link to that screen
+		- add 3d cube and ensure it works
+		- rotate based on acceler or gyro
+	- regl, copy example from regl website!
+
+- TRY COMPILING AND PUBLISHING AND USING STANDALONE
+	- MY IPHONE
+	- JANES ANDROID
+
+- Try inserting redux and react-redux
+	? is there a react-redux-exNavigation?
