@@ -12,9 +12,9 @@ TODO
 
 - OpenGL!
 	- three.js rotating cube based on gyro or whatever
-		- new screen and link to that screen
-		- add 3d cube and ensure it works
-		- rotate based on acceler or gyro
+		*- new screen and link to that screen
+		*- add 3d cube and ensure it works
+		*- rotate based on acceler or gyro
 	- regl, copy example from regl website!
 
 - TRY COMPILING AND PUBLISHING AND USING STANDALONE

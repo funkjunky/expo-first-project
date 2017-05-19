@@ -6,6 +6,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 import RootNavigation from './RootNavigation';
 import SqlScreen from '../screens/SqlScreen';
 import MapScreen from '../screens/MapScreen';
+import Gl3d from '../screens/Gl3d';
 
 export default createRouter(() => ({
   home: () => HomeScreen,
@@ -13,5 +14,6 @@ export default createRouter(() => ({
   settings: () => SettingsScreen,
   rootNavigation: () => RootNavigation,
   sql: () => SqlScreen,
-  map: () => MapScreen
+  map: () => MapScreen,
+  gl3d: () => Gl3d
 }));

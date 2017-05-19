@@ -66,6 +66,7 @@ export default class HomeScreen extends React.Component {
           </View>
             <Text onPress={() => this.props.navigator.push('sql')}>Click to go to sql demo!</Text>
             <Text onPress={() => this.props.navigator.push('map')} style={{ fontSize: 24 }}>Click to go to MAPS!</Text>
+            <Text onPress={() => this.props.navigator.push('gl3d')} style={{ fontSize: 24 }}>Click to go to 3D!</Text>
         </ScrollView>
 
         <View style={styles.tabBarInfoContainer}>

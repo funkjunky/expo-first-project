@@ -12,9 +12,7 @@ class DemoScreen extends React.Component {
 
     componentWillMount() {
         this.db = SQLite.openDatabase({ name: 'db.db' });
-        console.log('mounting... ', this.db);
         this.db.transaction(dbh => {
-            console.log('dbh: ', dbh, dbh.executeSql);
             dbh.executeSql('create table if not exists items (id integer primary key not null, done int, value text)',
                 [],
                 () => console.log('success'),
