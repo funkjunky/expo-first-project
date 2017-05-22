@@ -45,6 +45,11 @@ class Gl3d extends React.Component {
 		}));
     }
 
+    componentWillUnmount() {
+        Gyroscope.removeAllListeners();
+        Accelerometer.removeAllListeners();
+    }
+
     tick = (dt) => {
         this.mesh.rotation.x = this.state.rotation.x / 2;
         this.mesh.rotation.y = this.state.rotation.y / 2;
@@ -59,7 +64,7 @@ class Gl3d extends React.Component {
 
     render = () => (
         <View style={{ margin: 20, height: '100%', flex: 1, justifyContent: 'space-between' }}>
-            <Text>3D cube and gyro - <Text onPress={ () => this.props.navigator.pop() }>Back</Text></Text>
+            <Text style={{ fontSize: 24 }}>3D cube and gyro - <Text onPress={ () => this.props.navigator.pop() }>Back</Text></Text>
             <Text>Acc Location (Seems off): { JSON.stringify(this.state.position) }</Text>
             <THREEView
                 style={{ flex: 1 }}

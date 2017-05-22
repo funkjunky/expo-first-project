@@ -44,7 +44,7 @@ class DemoScreen extends React.Component {
     render() {
         const { todoText, items } = this.state;
         return <View style={{ margin: 20, height: '100%', flex: 1, justifyContent: 'space-between' }}>
-            <Text>TODOs - <Text onPress={ () => this.props.navigator.pop() }>Back</Text></Text>
+            <Text style={{ fontSize: 24 }}>TODOs - <Text onPress={ () => this.props.navigator.pop() }>Back</Text></Text>
             <View>
                 <Text>New Item:</Text>
                 <TextInput style={{ height: 40, borderWidth: 1, borderColor: 'black' }} onChangeText={ todoText => this.setState({ todoText }) } value={ todoText } />

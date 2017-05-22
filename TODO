@@ -16,14 +16,11 @@ TODO
 		*- add 3d cube and ensure it works
 		*- rotate based on acceler or gyro
 
-	- regl
+	*- regl
 		*- write code for showing a triangle
-		- ensure triangle shows!
-		- write code to show a sprite
-		- animate the sprite
-		- bounce hundreds of animated sprites around the screen.
+		*- ensure triangle shows!
 
-- update Home screen to be nicely styles and easy to click links
+*- update Home screen to be nicely styles and easy to click links
 
 - TRY COMPILING AND PUBLISHING AND USING STANDALONE
 	- MY IPHONE

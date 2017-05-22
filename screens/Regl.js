@@ -74,7 +74,7 @@ class ReglScreen extends React.Component {
 
     render = () => (
         <View style={{ margin: 20, marginBottom: 100, height: '100%', flex: 1, justifyContent: 'space-between' }}>
-            <Text>Regl GL sprites - <Text onPress={ () => this.props.navigator.pop() }>Back</Text></Text>
+            <Text style={{ fontSize: 24 }}>Regl GL sprites - <Text onPress={ () => this.props.navigator.pop() }>Back</Text></Text>
             <GLView style={{ width: '100%', height: '100%', borderColor: 'black', borderWidth: 1, borderStyle: 'solid' }} onContextCreate={ this.onContextCreate } />
             <Text>gl 3d page</Text>
         </View>

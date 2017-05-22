@@ -44,7 +44,7 @@ class MapScreen extends React.Component {
             />
         }
         return <View style={{ margin: 20, height: '100%', flex: 1, justifyContent: 'space-between' }}>
-            <Text>THE MAP - <Text onPress={ () => this.props.navigator.pop() }>Back</Text></Text>
+            <Text style={{ fontSize: 24 }}>THE MAP - <Text onPress={ () => this.props.navigator.pop() }>Back</Text></Text>
             { mapView }
             <Text>Location: { JSON.stringify(this.state.location) }</Text>
         </View>;
