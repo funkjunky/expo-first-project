@@ -10,12 +10,20 @@ TODO
 
 *- try SQL access.
 
-- OpenGL!
-	- three.js rotating cube based on gyro or whatever
+*- OpenGL!
+	*- three.js rotating cube based on gyro or whatever
 		*- new screen and link to that screen
 		*- add 3d cube and ensure it works
 		*- rotate based on acceler or gyro
-	- regl, copy example from regl website!
+
+	- regl
+		*- write code for showing a triangle
+		- ensure triangle shows!
+		- write code to show a sprite
+		- animate the sprite
+		- bounce hundreds of animated sprites around the screen.
+
+- update Home screen to be nicely styles and easy to click links
 
 - TRY COMPILING AND PUBLISHING AND USING STANDALONE
 	- MY IPHONE

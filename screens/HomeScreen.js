@@ -35,38 +35,11 @@ export default class HomeScreen extends React.Component {
 
           <View style={styles.getStartedContainer}>
             {this._maybeRenderDevelopmentModeWarning()}
-
-            <Text style={styles.getStartedText}>
-              Get started by opening
-            </Text>
-
-            <View
-              style={[
-                styles.codeHighlightContainer,
-                styles.homeScreenFilename,
-              ]}>
-              <MonoText style={styles.codeHighlightText}>
-                screens/HomeScreen.js
-              </MonoText>
-            </View>
-
-            <Text style={styles.getStartedText}>
-              Change this text and your app will automatically reload.
-            </Text>
           </View>
-
-          <View style={styles.helpContainer}>
-            <TouchableOpacity
-              onPress={this._handleHelpPress}
-              style={styles.helpLink}>
-              <Text style={styles.helpLinkText}>
-                Help, it didn’t automatically reload!
-              </Text>
-            </TouchableOpacity>
-          </View>
-            <Text onPress={() => this.props.navigator.push('sql')}>Click to go to sql demo!</Text>
-            <Text onPress={() => this.props.navigator.push('map')} style={{ fontSize: 24 }}>Click to go to MAPS!</Text>
-            <Text onPress={() => this.props.navigator.push('gl3d')} style={{ fontSize: 24 }}>Click to go to 3D!</Text>
+            <Text onPress={() => this.props.navigator.push('sql')} style={ styles.link }>Click to go to sql demo!</Text>
+            <Text onPress={() => this.props.navigator.push('map')} style={ styles.link }>Click to go to MAPS!</Text>
+            <Text onPress={() => this.props.navigator.push('gl3d')} style={ styles.link }>Click to go to 3D!</Text>
+            <Text onPress={() => this.props.navigator.push('regl')} style={ styles.link }>Click to go to Regl!</Text>
         </ScrollView>
 
         <View style={styles.tabBarInfoContainer}>
@@ -207,4 +180,18 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#2e78b7',
   },
+	link: {
+		display: 'flex',
+		width: '100%',
+		textAlign: 'center',
+		fontSize: 32,
+		margin: 5,
+		shadowColor: 'black',
+		shadowOffset: { width: 5, height: 5 },
+		shadowRadius: 5,
+		borderColor: 'gray',
+		borderWidth: 1,
+		borderStyle: 'solid',
+		backgroundColor: 'white'
+	}
 });
