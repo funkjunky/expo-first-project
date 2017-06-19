@@ -1,7 +1,7 @@
 {
-  "name": "first-project",
+  "name": "jasonzz-demo-project",
   "description": "No description",
-  "slug": "first-project",
+  "slug": "jasonzz-demo-project",
   "privacy": "public",
   "sdkVersion": "16.0.0",
   "version": "1.0.0",
@@ -20,6 +20,10 @@
     "assetExts": ["ttf"]
   },
   "ios": {
-    "supportsTablet": true
+    "supportsTablet": false,
+    "bundleIdentifier": "ca.jayeh.expdemo"
+  },
+  "android": {
+      "package": "ca.jayeh.expdemo"
   }
 }

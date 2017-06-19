@@ -49,7 +49,7 @@ export default class HomeScreen extends React.Component {
 
           <View
             style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-            <MonoText style={styles.codeHighlightText}>
+            <MonoText style={styles.codeHighlightText} cb={ () => console.log('sdgf') }>
               navigation/RootNavigation.js
             </MonoText>
           </View>
